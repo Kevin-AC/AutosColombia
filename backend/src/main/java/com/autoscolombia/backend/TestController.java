@@ -8,6 +8,8 @@ public class TestController {
 
     @GetMapping("/ping")
     public String ping() {
-        return "Backend funcionando ✅";
+        System.out.println("hola mundo");
+        return "Backend funcionando hola mundo ✅";
     }
-}
+
+    };
