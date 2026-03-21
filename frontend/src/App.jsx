@@ -25,14 +25,14 @@ function App() {
                 spam={'de 60 total'}
               />
               <MainCard
-                title={'Celdas disponibles'}
-                number={'42'}
-                spam={'de 60 total'}
+                title={'Vehiculos Activos'}
+                number={'18'}
+                spam={'En terminal'}
               />
               <MainCard
-                title={'Celdas disponibles'}
-                number={'42'}
-                spam={'de 60 total'}
+                title={'Ocupacion '}
+                number={'30%'}
+                spam={'Capacidad actual'}
               />
               <MainCard
                 title={'Celdas disponibles'}

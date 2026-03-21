@@ -8,7 +8,7 @@ const vehicleData = [
 
 export default function VehiclesTable (){
     return (
-        <div className="bg-MainBackground  w-[385px]">
+        <div className="w-[385px]">
             <div className="mb-5">
                 <h3 className="text-3xl font-medium text-PrimaryInverted leading-tight">Vehículos Actuales</h3>
                 <p className="text-lg text-Paragraf mt-0.5 leading-relaxed">Vehículos activos en sistema</p>
@@ -26,7 +26,7 @@ export default function VehiclesTable (){
                     </thead>
                     <tbody>
                         {vehicleData.map((row) => (
-                            <tr key={row.placa} className="border-b border-Neutral/30 last:border-b-0 bg-white hover:bg-Neutral/20 group hover:scale-[1.02] hover:-translate-x-1 transition-all duration-300 ease-out">
+                            <tr key={row.placa} className="border-b border-Neutral/30 last:border-b-0 bg-white hover:bg-Neutral/20 group hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 ease-out">
                                 <td className="py-3.5 px-6 font-semibold text-Primary">{row.placa}</td>
                                 <td className="py-3.5 px-6 text-Secondary">{row.celda}</td>
                                 <td className="py-3.5 px-6 text-Paragraf">{row.entrada}</td>
@@ -35,13 +35,9 @@ export default function VehiclesTable (){
                     </tbody>
                 </table>
             </div>
-
-
-            <div className="h-12 bg-Primary/10 flex mt-2 rounded-sm">
-                <button className="text-BlueHover/70  font-bold block mx-auto ">
+                <button className="bg-Primary/10 w-full h-12 rounded-sm mt-2 text-BlueHover/70  font-bold block mx-auto hover:cursor-pointer group hover:scale-[1.02] hover:-translate-y-1 transition-all duration-300 ease-out ">
                     VER TODOS LOS REGISTROS
                 </button>
-            </div>
         </div>
     );
 };
