@@ -1,6 +1,6 @@
 export default function MenuLateral() {
     return (
-        <section className="w-75 py-12 px-2 h-screen shadow-lg bg-MainBackground flex flex-col justify-between">
+        <section className="w-[350px] py-12 px-2 h-screen shadow-lg bg-Neutral flex flex-col justify-between">
                 <div>
                 <div className="flex gap-2">
                     <img className="w-12" src="src/assets/Logo.svg" alt="Logo" />
