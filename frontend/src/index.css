@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme{
+  --color-Primary:#1A4F8B;
+  --color-BlueHover:#1D4ED8;
+  --color-PrimaryInverted:#29343A;
+  --color-Secondary:#475467;
+  --color-Tertiary:#747591;
+  --color-Neutral:#F2F4F7;
+  --color-Reddot:#9F403D;
+  --color-Paragraf:#566168;
+  --color-Alert:#FDE68A;
+  --color-MainBackground:#F8FAFC;
+  
+
+  
+}
