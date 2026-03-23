@@ -6,9 +6,9 @@ export default function EstadoDeCelda() {
                     <span className="text-xs font-semibold px-2 py-1 rounded bg-Reddot/10 text-Reddot tracking-wider">
                         OCCUPIED
                     </span>
-                    <h2 className="text-2xl font-bold text-TitlePrimary mt-2">
+                    <h3 className="title mt-2">
                         Cell A2
-                    </h2>
+                    </h3>
                 </div>
 
                 <div className="w-10 h-10 flex items-center text-BlueHover justify-center rounded-lg bg-Neutral">

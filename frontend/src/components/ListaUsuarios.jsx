@@ -58,7 +58,7 @@ export default function ListaUsuarios() {
         <section className="bg-white rounded-lg shadow-xl border border-gray-200 h-4/5">
             <article className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 gap-4 p-7">
                 <div>
-                    <h1 className="text-3xl font-bold text-TitlePrimary">Lista de usuarios</h1>
+                    <h3 className="title">Lista de usuarios</h3>
                     <p className="text-Paragraf mt-1">Muestra todos los usuarios registrados en el sistema</p>
                 </div>
                 <div className="flex flex-col items-center sm:flex-row gap-3">

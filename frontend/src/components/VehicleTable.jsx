@@ -10,7 +10,7 @@ export default function VehiclesTable (){
     return (
         <div className="w-[385px]">
             <div className="mb-5">
-                <h3 className="text-3xl font-medium text-PrimaryInverted leading-tight">Vehículos Actuales</h3>
+                <h3 className="title">Vehículos Actuales</h3>
                 <p className="text-lg text-Paragraf mt-0.5 leading-relaxed">Vehículos activos en sistema</p>
             </div>
 

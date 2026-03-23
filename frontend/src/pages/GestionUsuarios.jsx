@@ -10,7 +10,7 @@ export default function GestionUsuarios(){
                 <MenuLateral />
             </article>
             <section className="w-full">
-                    <div className="w-full mt-4 flex justify-center items-start gap-8 ">
+                <div className="flex items-start justify-around gap-4 p-4 ">
                         <RegistroUsuario/>
                         <ListaUsuarios/>
 

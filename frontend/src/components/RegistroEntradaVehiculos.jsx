@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-export default function EntradaVehiculo() {
+export default function RegistroEntradaVehiculo() {
     const [formData, setFormData] = useState({
         licensePlate: '',
         cellNumber: '',
@@ -22,7 +22,7 @@ export default function EntradaVehiculo() {
 
     return (
             <article className="bg-white rounded-xl shadow-xl border border-Neutral p-6">
-                    <h1 className="text-2xl font-bold text-TitlePrimary mb-5">Entrada de Vehículo</h1>
+                    <h3 className="title">Entrada de Vehículo</h3>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         
                         <div className="grid grid-cols-2 gap-4">

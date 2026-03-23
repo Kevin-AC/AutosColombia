@@ -33,7 +33,7 @@ export default function CellsTable(){
       ];
     return(
         <section className="w-[600px]">
-            <h2 className="text-3xl font-medium text-PrimaryInverted">Estado de Celdas</h2>
+            <h2 className="title">Estado de Celdas</h2>
             <div className="flex justify-between text-Paragraf pb-5">
                 <p className="text-Paragraf text-lg">Monitoreo en tiempo real</p>
                 <div className="flex w-fit gap-4 pr-3">
