@@ -15,7 +15,7 @@ export default function MenuLateral() {
                     <ul class="py-6 space-y-2 font-medium">
                         <li>
                             <Link to={'/'} className="NavLink">
-                                <ion-icon name="grid-outline" size={'large'}></ion-icon>
+                                <ion-icon name="home-outline" size={'large'}></ion-icon>
                                 <span>Dashboard</span>
                             
                             </Link>
@@ -33,6 +33,13 @@ export default function MenuLateral() {
                                 <span>Vehicles</span>
                             </Link>
                             
+                        </li>
+                        <li>
+                            <Link to={'/Celdas'} className="NavLink">
+                                <ion-icon name="grid-outline" size={'large'}></ion-icon>
+                                <span>Celldas</span>
+                            </Link>
+
                         </li>
                         <li>
                             <Link to={'/'} className="NavLink">
