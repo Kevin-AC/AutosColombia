@@ -2,8 +2,8 @@ export default function RegistroPago() {
     return (
         <section className="w-[550px] h-[462px] bg-white rounded-xl shadow-lg border border-Neutral p-6 flex flex-col gap-5">
             <div>
-                <h2 className="text-lg font-bold text-TitlePrimary">
-                    Record New Payment
+                <h2 className="title">
+                    Nuevo Pago
                 </h2>
                 <p className="text-sm text-Paragraf mt-1">
                     Log monthly subscription or ad-hoc parking fees.
@@ -44,7 +44,7 @@ export default function RegistroPago() {
                     </label>
                     <input
                         type="date"
-                        className="inputRegistro"
+                        className="inputRegistro text-TitlePrimary"
                     />
                 </div>
                 <button

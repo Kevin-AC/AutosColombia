@@ -1,4 +1,4 @@
-export default function HistorialPagos() {
+export default function ListaHistorialPagos() {
 
     const pagos = [
         {
@@ -43,10 +43,7 @@ export default function HistorialPagos() {
     return (
         <section className="w-full bg-white rounded-xl shadow-lg border border-Neutral flex flex-col">
             <div className="p-6 flex items-center justify-between border-b border-Neutral">
-                <h2 className="text-lg font-bold text-TitlePrimary">
-                    Payment History
-                </h2>
-
+                <h3 className="title">Historial de Pagos</h3>
                 <div className="flex items-center gap-3">
 
                     <button className="flex items-center gap-2 px-3 py-2 bg-Neutral rounded-lg text-Secondary text-sm">

@@ -25,7 +25,7 @@ export default function RegistroUsuario() {
     return (
         <div className="max-w-md p-8 h-fit bg-white rounded-lg shadow-xl border border-Neutral">
             <div className="text-center mb-3">
-                <h2 className="text-2xl font-bold text-TitlePrimary ">Nuevo registro</h2>
+                <h2 className="title ">Nuevo registro</h2>
                 <div className="w-30 h-0.5 bg-Primary mx-auto"></div>
             </div>
 

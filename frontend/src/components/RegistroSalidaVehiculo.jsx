@@ -1,5 +1,5 @@
 
-export default function SalidaVehiculo() {
+export default function RegistroSalidaVehiculo() {
     const resumenCosto = {
         duration : '2h 15m',
         baseRate : '$5.000/hr',
@@ -19,9 +19,7 @@ export default function SalidaVehiculo() {
 
     return (
       <article className="bg-white rounded-xl shadow-xl border border-Neutral p-6">
-        <h1 className="text-2xl font-bold text-TitlePrimary mb-2">
-          Salida de Vehículo
-        </h1>
+        <h3 className="title">Salida de Vehículo</h3>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="w-full">
             <label className="block mb-2 text-sm font-medium text-Secondary uppercase ">

@@ -1,7 +1,7 @@
-import EntradaVehiculo from "../components/EntradaVehiculos"
+import RegistroEntradaVehiculo from "../components/RegistroEntradaVehiculos"
 import MenuLateral from "../components/MenuLateral"
-import SalidaVehiculo from "../components/SalidaVehiculo"
-import VehiculosParqueados from "../components/VehiculosParqueados"
+import RegistroSalidaVehiculo from "../components/RegistroSalidaVehiculo"
+import ListaVehiculosParqueados from "../components/ListaVehiculosParqueados"
 
 
 export default function GestionVehiculos(){
@@ -10,13 +10,13 @@ export default function GestionVehiculos(){
                     <article className="w-auto">
                         <MenuLateral />
                     </article>
-                    <section className="w-full flex items-center justify-center gap-8">
+                    <section className="flex items-start justify-around gap-4 p-4">
                         <div className="w-1/2 flex flex-col gap-2 ">
-                            <EntradaVehiculo />
-                            <SalidaVehiculo/>
+                            <RegistroEntradaVehiculo />
+                            <RegistroSalidaVehiculo/>
                         </div>
                         <div className="w-full h-[90vh]">
-                            <VehiculosParqueados />
+                            <ListaVehiculosParqueados/>
                         </div>
                     </section>
                           

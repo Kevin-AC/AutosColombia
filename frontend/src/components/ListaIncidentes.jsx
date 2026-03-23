@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ListaIncidentes({ className = '' }) {
+export default function ListaIncidentes() {
   const [filtro, setFiltro] = useState('All');
   const records = [
     {
@@ -8,6 +8,7 @@ export default function ListaIncidentes({ className = '' }) {
       placa: 'ABC',
       vehicle: 'Mazda CX-5',
       type: 'Damage',
+      icon:'car-sport-outline',
       status: 'PENDING'
     },
     {
@@ -15,6 +16,7 @@ export default function ListaIncidentes({ className = '' }) {
       placa: 'LMP',
       vehicle: 'Toyota Hilux',
       type: 'Blockage',
+      icon: 'ban-outline',
       status: 'IN PROGRESS'
     },
     {
@@ -22,6 +24,7 @@ export default function ListaIncidentes({ className = '' }) {
       placa: 'K01',
       vehicle: 'Tesla Model 3',
       type: 'Other',
+      icon:'warning-outline',
       status: 'RESOLVED'
     }
   ];
@@ -32,25 +35,19 @@ export default function ListaIncidentes({ className = '' }) {
     RESOLVED: 'bg-green-100 text-green-800 border-green-200'
   };
 
-  const typeIcons = {
-    Damage: '🚗💥',
-    Blockage: '🚧',
-    Other: '⚠️'
-  };
 
   return (
-    <section className={`bg-white rounded-3xl shadow-2xl border border-Neutral overflow-hidden ${className}`}>
+    <section className="bg-white rounded-3xl shadow-2xl border border-Neutral overflow-hidden">
    
       <div className="p-6 border-b border-Neutral bg-linear-to-r from-Primary/5 to-BlueHover/5">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-          <h3 className="text-2xl font-black text-TitlePrimary">Active & Recent Records</h3>
+          <h3 className="title">Listado de Incidentes</h3>
           
-          <div className="flex items-center gap-3 flex-wrap">
-            
+          <div className="w-64 flex  gap-3 ">
             <select 
               value={filtro} 
               onChange={(e) => setFiltro(e.target.value)}
-              className="px-4 py-2.5 border border-Neutral rounded-xl bg-white text-Secondary focus:ring-2 focus:ring-Primary focus:border-Primary text-sm font-medium"
+              className="px-4 py-2 border border-Neutral rounded-xl bg-white text-Secondary outline-none focus:ring-2 focus:ring-Primary focus:border-Primary text-sm font-medium"
             >
               <option>All</option>
               <option>PENDING</option>
@@ -58,8 +55,8 @@ export default function ListaIncidentes({ className = '' }) {
               <option>RESOLVED</option>
             </select>
        
-            <button className="px-6 py-2.5 bg-Primary hover:bg-BlueHover text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all">
-              📊 Export
+            <button className="buttonSubmit ">
+               Export
             </button>
           </div>
         </div>
@@ -90,7 +87,7 @@ export default function ListaIncidentes({ className = '' }) {
                 </td>
                 <td className="px-6 py-5">
                   <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-Neutral text-Secondary">
-                    {typeIcons[record.type] || '⚠️'}
+                    {<ion-icon name={record.icon}></ion-icon>}
                     {record.type}
                   </span>
                 </td>

@@ -21,7 +21,7 @@ export default function GestionVehiculos(){
             <section className="w-full h-screen flex flex-col justify-center gap-16">
                 <div className="w-full flex justify-between">
                     <div className="text-TitlePrimary">
-                        <h1 className="text-3xl font-bold">Gestion Celdas</h1>
+                        <h3 className="title">Gestion Celdas</h3>
                         <p>Estado de celdas en tiempo real</p>
                     </div>
                     <div className="flex gap-4">

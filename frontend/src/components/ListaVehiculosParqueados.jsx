@@ -1,5 +1,5 @@
 
-export default function VehiculosParqueados() {
+export default function ListaVehiculosParqueados() {
     const vehiculosEstacionados = [
         {
             placa: 'MZ9-456',
@@ -110,7 +110,7 @@ export default function VehiculosParqueados() {
         <section className="w-full h-full bg-white rounded-xl shadow-2xl border border-Neutral overflow-hidden  flex flex-col ">
             <div className="p-6 border-b border-Neutral shrink-0">
                 <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-bold text-TitlePrimary">VehiculosParqueados</h3>
+                    <h3 className="title">Vehiculos Parqueados</h3>
                     <div className="flex items-center gap-2">
                         <span className="px-3 py-1 bg-Primary/10 text-Primary text-sm font-semibold rounded-sm">
                             {vehiculosEstacionados.length} UNIDADES

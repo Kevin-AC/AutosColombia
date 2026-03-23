@@ -22,7 +22,7 @@ export default function NuevoIncidente() {
                         numero placa
                     </label>
                     <div className="relative">
-                        <select className="w-full appearance-none inputRegistro">
+                        <select className="w-full appearance-none inputRegistro text-TitlePrimary">
                             <option>Select Plate (Optional)</option>
                         </select>
                         <div className="absolute right-3 top-1/2 -translate-y-1/2 text-Tertiary">
@@ -62,7 +62,7 @@ export default function NuevoIncidente() {
 
                     <input
                         type="datetime-local"
-                        className="inputRegistro"
+                        className="inputRegistro text-TitlePrimary"
                     />
                 </div>
                 <div className="flex flex-col gap-1">
