@@ -48,7 +48,7 @@ export default function MenuLateral() {
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/'} className="NavLink">
+                            <Link to={'/Incidentes'} className="NavLink">
                                 <ion-icon name="alert-circle-outline" size={'large'}></ion-icon>
                                 <span>Reports</span>
                             </Link>

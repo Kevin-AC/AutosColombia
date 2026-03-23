@@ -7,6 +7,7 @@ import GestionUsuarios from './pages/GestionUsuarios.jsx'
 import GestionVehiculos from './pages/GestionVehiculos.jsx';
 import GestionCeldas from './pages/GestionCeldas.jsx'
 import GestionPagos from './pages/GestionPagos.jsx'
+import GestionIncidentes from './pages/GestionIncidentes.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/Vehiculos" element={<GestionVehiculos />} />
       <Route path="/Celdas" element={<GestionCeldas />} />
       <Route path="/Pagos" element={<GestionPagos />} />
+      <Route path='/Incidentes' element={<GestionIncidentes/>}/>
       
     </Routes>
   </BrowserRouter>
