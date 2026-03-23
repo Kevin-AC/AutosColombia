@@ -42,7 +42,7 @@ export default function MenuLateral() {
 
                         </li>
                         <li>
-                            <Link to={'/'} className="NavLink">
+                            <Link to={'/Pagos'} className="NavLink">
                                 <ion-icon name="cash-outline" size={'large'}></ion-icon>
                                 <span>Payments</span>
                             </Link>
