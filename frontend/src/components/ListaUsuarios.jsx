@@ -61,7 +61,7 @@ export default function ListaUsuarios() {
                     <h1 className="text-3xl font-bold text-TitlePrimary">Lista de usuarios</h1>
                     <p className="text-Paragraf mt-1">Muestra todos los usuarios registrados en el sistema</p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col items-center sm:flex-row gap-3">
                     <div className="relative">
                         <select
                             value={filtro}
@@ -75,7 +75,7 @@ export default function ListaUsuarios() {
                     </div>
                     <button
                         onClick={exportar}
-                        className="px-6 py-2.5 bg-Primary text-white font-medium rounded-lg hover:bg-Primary/90 transition-all duration-200 shadow-md hover:shadow-lg"
+                        className="buttonSubmit h-12 px-4"
                     >
                         Exportar
                     </button>
@@ -116,7 +116,7 @@ export default function ListaUsuarios() {
                                                 <div className="text-sm font-medium text-TitlePrimary  ">{usuario.nombre}</div>
                                                 <p className='space-x-1'>
                                                     <span className="text-sm text-Tertiary  ">{usuario.marca} {usuario.modelo}</span>
-                                                    <span className="bg-Alert w-fit rounded-sm p-0.5 text-xs text-Tertiary font-bold">{usuario.placa}</span>
+                                                    <span className="px-2 py-0.5  border border-TitlePrimary bg-Alert rounded-sm text-sm  text-Tertiary font-bold">{usuario.placa}</span>
                                                 </p>
                                             </div>
                                         </td>
@@ -130,10 +130,10 @@ export default function ListaUsuarios() {
                                         <td className="px-6 py-5 whitespace-nowrap text-sm font-medium">
                                             <div className="flex items-center gap-2">
                                                 <button className="text-Primary hover:text-BlueHover p-1 -m-1 rounded-lg hover:bg-Primary/10 transition-all">
-                                                    ✏️
+                                                    <ion-icon name="create-outline" size={"small"}></ion-icon>
                                                 </button>
                                                 <button className="text-Reddot hover:text-red-600 p-1 -m-1 rounded-lg hover:bg-red-50 transition-all">
-                                                    🗑️
+                                                    <ion-icon name="trash-outline" size={"small"}></ion-icon>
                                                 </button>
                                             </div>
                                         </td>

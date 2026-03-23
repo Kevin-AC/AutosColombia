@@ -23,7 +23,7 @@ export default function RegistroUsuario() {
     };
 
     return (
-        <div className="max-w-md p-8 h-fit bg-white rounded-lg shadow-xl border border-gray-200">
+        <div className="max-w-md p-8 h-fit bg-white rounded-lg shadow-xl border border-Neutral">
             <div className="text-center mb-3">
                 <h2 className="text-2xl font-bold text-TitlePrimary ">Nuevo registro</h2>
                 <div className="w-30 h-0.5 bg-Primary mx-auto"></div>
@@ -126,7 +126,7 @@ export default function RegistroUsuario() {
 
                 <button
                     type="submit"
-                    className="w-full bg-Primary/90 text-white py-4 px-6 rounded-xl font-semibold text-lg shadow-lg  transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center gap-2"
+                    className="buttonSubmit"
                 >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
