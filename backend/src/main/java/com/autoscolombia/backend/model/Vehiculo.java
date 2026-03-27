@@ -9,21 +9,13 @@ public class Vehiculo {
     private String placa;
     private String marca;
     private String modelo;
-    private String celda;
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-
 
     @ManyToOne
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
+    @ManyToOne
+    @JoinColumn(name = "numero_celda_id")
+    private Celda celda;
 
     // Getters y Setters
 
@@ -34,6 +26,14 @@ public class Vehiculo {
     public void setPlaca(String placa) {
         this.placa = placa;
     }
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
 
     public String getModelo() {
         return modelo;
@@ -51,11 +51,11 @@ public class Vehiculo {
         this.usuario = usuario;
     }
 
-    public String getCelda() {
+    public Celda getCelda() {
         return celda;
     }
 
-    public void setCelda(String celda) {
+    public void setCelda(Celda celda) {
         this.celda = celda;
     }
 }
