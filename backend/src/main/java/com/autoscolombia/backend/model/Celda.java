@@ -1,21 +1,21 @@
 package com.autoscolombia.backend.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Table(name = "celdas")
 @Data
 public class Celda {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    //@Column(unique = true, length = 10)
     private Integer numeroCelda;
-
+    //private String codigo;
     private String estado;
     private String placaActual;
 
-    // Getters y Setters
+
 
     public Integer getNumeroCelda() {
         return numeroCelda;

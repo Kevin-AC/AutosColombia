@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/vehiculos
+Content-Type: application/json
+
+{
+  "placa": "KAT-198",
+  "marca": "Suzuki",
+  "modelo": "2015",
+  "celda": {
+    "numeroCelda": 1
+  },
+  "propietario": {
+    "cedula": "1001"
+  }
+}

@@ -8,16 +8,17 @@ import java.util.List;
 @Table(name = "usuarios")
 public class Usuario {
     @Id
-    private String cedula; // Llave primaria
-
+    private String cedula;
     private String nombre;
     private String telefono;
+    private Double mensualidad;
 
 
-    @OneToMany(mappedBy = "propietario", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
     private List<Vehiculo> vehiculos;
 
     // Getters y Setters
+
 
     public String getCedula() {
         return cedula;
@@ -49,5 +50,13 @@ public class Usuario {
 
     public void setVehiculos(List<Vehiculo> vehiculos) {
         this.vehiculos = vehiculos;
+    }
+
+    public Double getMensualidad() {
+        return mensualidad;
+    }
+
+    public void setMensualidad(Double mensualidad) {
+        this.mensualidad = mensualidad;
     }
 }

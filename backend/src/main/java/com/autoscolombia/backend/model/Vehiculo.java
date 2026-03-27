@@ -7,12 +7,23 @@ import jakarta.persistence.*;
 public class Vehiculo {
     @Id
     private String placa;
-
+    private String marca;
     private String modelo;
+    private String celda;
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+
 
     @ManyToOne
-    @JoinColumn(name = "usuario_id") //
-    private Usuario propietario;
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 
     // Getters y Setters
 
@@ -32,11 +43,19 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public Usuario getPropietario() {
-        return propietario;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setPropietario(Usuario propietario) {
-        this.propietario = propietario;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getCelda() {
+        return celda;
+    }
+
+    public void setCelda(String celda) {
+        this.celda = celda;
     }
 }
